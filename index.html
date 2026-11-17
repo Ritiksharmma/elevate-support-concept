@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elevate Support: technical support consulting, AI and training</title>
+  <meta name="description" content="Elevate Support rebuilds technical support teams around AI, automation and better leadership. Consulting, training, automation, advisory and online courses from Hemant Verma and Fabio De Moraes.">
+  <meta name="theme-color" content="#0b0e14">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three/three.module.js", "three/addons/": "./vendor/three/addons/" } }
+  </script>
+</head>
+<body>
+  <svg width="0" height="0" class="defs" aria-hidden="true">
+    <defs>
+      <symbol id="mark" viewBox="0 0 40 40">
+        <g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round">
+          <path d="M20 5 A15 15 0 0 1 35 20"/><path d="M32.99 27.5 A15 15 0 0 1 12.5 32.99"/><path d="M7.01 27.5 A15 15 0 0 1 12.5 7.01"/>
+        </g>
+        <g fill="currentColor"><circle cx="20" cy="5" r="2.7"/><circle cx="32.99" cy="27.5" r="2.7"/><circle cx="7.01" cy="27.5" r="2.7"/></g>
+        <path d="M16 14h8M16 20h6M16 26h8M16 13v14" fill="none" stroke="var(--mark-e, currentColor)" stroke-width="2.6"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <canvas class="world" data-world aria-hidden="true"></canvas>
+  <div class="poster" aria-hidden="true"></div>
+
+  <div class="loader" data-loader aria-hidden="true">
+    <svg class="loader-mark"><use href="#mark"/></svg>
+    <p class="loader-count"><span data-load-count>0</span></p>
+  </div>
+
+  <div class="hud" data-hud aria-hidden="true">
+    <svg class="hud-lines" data-hud-lines></svg>
+  </div>
+
+  <header class="top" data-top>
+    <a class="brand" href="#top" aria-label="Elevate Support, home">
+      <svg class="brand-mark" aria-hidden="true"><use href="#mark"/></svg>
+      <span class="brand-word">Elevate<br>Support</span>
+    </a>
+    <button class="menu" type="button" aria-expanded="false" aria-controls="nav" data-menu>Menu</button>
+    <nav class="nav" id="nav" aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#method">Method</a>
+      <a href="#book">The book</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-solid top-cta" href="mailto:info@elevate-support.com?subject=Discovery%20call&amp;body=Hi%20Elevate%2C%0A%0AWe%27d%20like%20to%20book%20a%20discovery%20call.%0A%0ACompany%3A%0ATeam%20size%3A%0AWhat%27s%20not%20working%3A%0A">Book a call</a>
+  </header>
+
+  <div class="bottom" data-bottom>
+    <p class="alt" aria-hidden="true"><span class="alt-k">Altitude</span> <span class="alt-v" data-alt>2.0 m</span></p>
+    <p class="hint" data-hint aria-hidden="true">Scroll to rise</p>
+    <button class="sound" type="button" aria-pressed="false" data-sound>
+      <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span data-sound-label>Sound off</span>
+    </button>
+  </div>
+
+  <main id="main">
+    <!-- Hero: the Elevate orbit, cast in metal and glass, over still water at dawn -->
+    <section class="panel hero" id="top" data-station="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 class="display" id="hero-title" data-split>Support, elevated.</h1>
+        <p class="lede" data-rise>We rebuild technical support teams around AI, automation and better leadership.</p>
+        <div class="row-actions" data-rise>
+          <a class="btn btn-solid" href="mailto:info@elevate-support.com?subject=Discovery%20call&amp;body=Hi%20Elevate%2C%0A%0AWe%27d%20like%20to%20book%20a%20discovery%20call.%0A%0ACompany%3A%0ATeam%20size%3A%0AWhat%27s%20not%20working%3A%0A">Book a discovery call</a>
+          <a class="btn btn-line" href="#services">See what we do</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- The storm: tickets in a vortex, then filing into orbit -->
+    <section class="story" aria-labelledby="story-title">
+      <div class="panel panel-left" data-station="storm">
+        <div class="card" data-reveal>
+          <p class="k">The storm</p>
+          <h2 class="h2" id="story-title">More tickets. More tools. The same people carrying all of it.</h2>
+        </div>
+      </div>
+      <div class="panel panel-right" data-station="order">
+        <div class="card" data-reveal>
+          <p class="k">Support, rebuilt</p>
+          <h2 class="h2">We put it back in orbit.</h2>
+          <p class="body">Elevate Support helps companies modernise technical support: integrating AI where it earns trust, automating what wastes time, and building a customer-centric culture that lasts.</p>
+          <dl class="facts">
+            <div><dt>15+ years</dt><dd>Hemant Verma, global technical services</dd></div>
+            <div><dt>20+ years</dt><dd>Fabio De Moraes, customer delivery and support</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services: five objects on the water, one practice each -->
+    <section class="services" id="services" aria-labelledby="services-title">
+      <h2 class="visually-hidden" id="services-title">What we do</h2>
+      <article class="panel panel-right svc" data-station="svc0">
+        <div class="card" data-reveal>
+          <p class="k">What we do <span class="k-n">1 of 5</span></p>
+          <h3 class="h-svc">Consulting</h3>
+          <p class="body">Tailored strategy for the support organisation you want to become.</p>
+          <ul class="ticks"><li>Technical support transformation</li><li>AI integration</li><li>Customer experience</li><li>Change management</li></ul>
+        </div>
+      </article>
+      <article class="panel panel-right svc" data-station="svc1">
+        <div class="card" data-reveal>
+          <p class="k">What we do <span class="k-n">2 of 5</span></p>
+          <h3 class="h-svc">Training</h3>
+          <p class="body">Hands-on workshops, from AI basics to advanced practice.</p>
+          <ul class="ticks"><li>Support leadership development</li><li>AI in technical support</li></ul>
+        </div>
+      </article>
+      <article class="panel panel-right svc" data-station="svc2">
+        <div class="card" data-reveal>
+          <p class="k">What we do <span class="k-n">3 of 5</span></p>
+          <h3 class="h-svc">Automation</h3>
+          <p class="body">Efficiency for contact and support centres, without losing the human touch.</p>
+          <ul class="ticks"><li>Automating repetitive tasks</li><li>Enhancing data accuracy</li></ul>
+        </div>
+      </article>
+      <article class="panel panel-right svc" data-station="svc3">
+        <div class="card" data-reveal>
+          <p class="k">What we do <span class="k-n">4 of 5</span></p>
+          <h3 class="h-svc">Advisory</h3>
+          <p class="body">Strategic counsel for AI decisions and support investments, from leaders who have run global support.</p>
+        </div>
+      </article>
+      <article class="panel panel-right svc" data-station="svc4">
+        <div class="card" data-reveal>
+          <p class="k">What we do <span class="k-n">5 of 5</span></p>
+          <h3 class="h-svc">Courses</h3>
+          <p class="body">Online courses and content: self-paced AI learning, playbooks and e-books for every level of your team.</p>
+          <a class="btn btn-line" href="mailto:info@elevate-support.com?subject=Which%20service%20fits%20us%3F">Ask which service fits you</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- The live demo: describe a problem, the water lights the service that fixes it -->
+    <section class="panel panel-left route" id="route" data-station="route" aria-labelledby="route-title">
+      <div class="card card-wide" data-reveal>
+        <p class="k">Try it</p>
+        <h2 class="h2" id="route-title">Where does your problem plug in?</h2>
+        <form class="route-form" data-route-form>
+          <label for="problem">Describe what is going wrong in your support today.</label>
+          <textarea id="problem" name="problem" rows="2" placeholder="For example: our agents copy and paste between three tools all day…" data-route-input></textarea>
+          <div class="chips" role="group" aria-label="Examples">
+            <button type="button" data-example="Our agents copy and paste between three tools all day">Copy and paste all day</button>
+            <button type="button" data-example="Our new team leads are struggling to coach">Team leads struggling</button>
+            <button type="button" data-example="We don't know which AI tools to trust with customers">Which AI to trust</button>
+            <button type="button" data-example="Customer satisfaction dropped after our reorganization">Satisfaction dropped</button>
+            <button type="button" data-example="We need to teach 200 agents to work with AI">Teach 200 agents</button>
+          </div>
+        </form>
+        <div class="route-result" aria-live="off" data-route-result>
+          <p class="route-to">Routed to <strong data-route-name>Automation</strong></p>
+          <p class="route-why" data-route-why>Repetitive work is the first thing to take off your agents’ desks.</p>
+          <a class="btn btn-solid" data-route-send href="mailto:info@elevate-support.com">Send this to Elevate</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Method: the camera rises through the cloud, one verb per step -->
+    <section class="method" id="method" aria-labelledby="method-title">
+      <h2 class="visually-hidden" id="method-title">How an engagement runs</h2>
+      <article class="panel verb" data-station="m0"><div class="verb-in" data-reveal><p class="k">Step 1 of 4</p><h3 class="verb-word">Listen</h3><p class="body">We sit with your agents, read your tickets and map where customers wait and where effort leaks.</p></div></article>
+      <article class="panel verb" data-station="m1"><div class="verb-in" data-reveal><p class="k">Step 2 of 4</p><h3 class="verb-word">Design</h3><p class="body">A target operating model: tiers, workflows, measures and the AI layer that powers them.</p></div></article>
+      <article class="panel verb" data-station="m2"><div class="verb-in" data-reveal><p class="k">Step 3 of 4</p><h3 class="verb-word">Automate</h3><p class="body">We ship the automations and AI integrations, then train your people to run them.</p></div></article>
+      <article class="panel verb" data-station="m3"><div class="verb-in" data-reveal><p class="k">Step 4 of 4</p><h3 class="verb-word">Elevate</h3><p class="body">Measure, coach, iterate, until support becomes a reason customers stay.</p></div></article>
+    </section>
+
+    <!-- The book, in 3D, above the cloud -->
+    <section class="panel panel-right book" id="book" data-station="book" aria-labelledby="book-title">
+      <div class="card" data-reveal>
+        <p class="k">The book, launching soon</p>
+        <h2 class="h2" id="book-title">ELEVATE</h2>
+        <p class="body">The Definitive Guide to Building a World-Class Support Organization, by Hemant Verma and Fabio De Moraes.</p>
+        <ul class="ticks">
+          <li>Cultivating a customer-centric culture</li>
+          <li>Attracting, developing and retaining top support talent</li>
+          <li>Optimizing processes, workflows and technologies</li>
+          <li>Harnessing data, automation and AI for proactive support</li>
+          <li>Aligning and collaborating across functions</li>
+          <li>Scaling operations to meet evolving customer needs</li>
+        </ul>
+        <a class="btn btn-line" href="mailto:info@elevate-support.com?subject=Notify%20me%20when%20ELEVATE%20launches">Tell me when it launches</a>
+      </div>
+    </section>
+
+    <!-- Founders -->
+    <section class="panel panel-left founders" id="founders" data-station="founders" aria-labelledby="founders-title">
+      <div class="card card-wide" data-reveal>
+        <p class="k">The founders</p>
+        <h2 class="h2" id="founders-title">35+ years of global support leadership, between two people.</h2>
+        <div class="bios">
+          <div class="bio"><img class="bio-photo" src="assets/media/founder-hemant.webp" width="400" height="500" alt="Hemant Verma" loading="lazy"><p class="bio-name">Hemant Verma</p><p class="body">A visionary leader with over 15 years of experience in global technical services, known for his strategic acumen and a relentless pursuit of excellence.</p></div>
+          <div class="bio"><img class="bio-photo" src="assets/media/founder-fabio.webp" width="400" height="500" alt="Fabio De Moraes" loading="lazy"><p class="bio-name">Fabio De Moraes</p><p class="body">An executive and customer delivery and support professional with over two decades of global leadership experience. Together they co-founded Elevate Support and wrote its book.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- A client's words -->
+    <section class="panel voice" data-station="voice" aria-labelledby="voice-title">
+      <h2 class="visually-hidden" id="voice-title">What clients say</h2>
+      <figure class="quote" data-reveal>
+        <blockquote><p>“Working with this company has been a game-changer for our business. Their innovative solutions and strategic approach have significantly boosted our performance.”</p></blockquote>
+        <figcaption>Michael R., CEO</figcaption>
+      </figure>
+      <div class="quotes-more" data-reveal>
+        <figure><blockquote><p>“They listened to our needs and provided customized solutions that really worked for us.”</p></blockquote><figcaption>Sarah K., Operations Manager</figcaption></figure>
+        <figure><blockquote><p>“Professional, attentive, and delivered beyond my expectations.”</p></blockquote><figcaption>Jane D., Marketing Director</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Contact, facing the sun -->
+    <section class="panel contact" id="contact" data-station="contact" aria-labelledby="contact-title">
+      <div class="contact-in" data-reveal>
+        <h2 class="display display-s" id="contact-title">Ready to rise?</h2>
+        <a class="btn btn-solid btn-big" href="mailto:info@elevate-support.com?subject=Discovery%20call&amp;body=Hi%20Elevate%2C%0A%0AWe%27d%20like%20to%20book%20a%20discovery%20call.%0A%0ACompany%3A%0ATeam%20size%3A%0AWhat%27s%20not%20working%3A%0A">Book a discovery call</a>
+        <dl class="contact-rows">
+          <div><dt>Email</dt><dd><a href="mailto:info@elevate-support.com">info@elevate-support.com</a></dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+13057903644">+1 305 790 3644</a></dd></div>
+          <div><dt>Based in</dt><dd>United States of America</dd></div>
+        </dl>
+      </div>
+      <footer class="foot">
+        <p>© 2026 Elevate Support. All rights reserved.</p>
+        <p>Every object on this page is drawn in code for Elevate. The book cover is Elevate’s own.</p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="vendor/gsap/gsap.min.js"></script>
+  <script src="vendor/gsap/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis/lenis.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
